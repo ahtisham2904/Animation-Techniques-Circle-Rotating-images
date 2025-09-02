@@ -1,0 +1,93 @@
+body{
+    /* background-color: black; */
+    overflow-x: hidden;
+}
+.main1 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("Resources/Products-background.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 200px;
+    color: transparent;
+    background-clip: text;
+}
+.container{
+    transition: all 2s ease;
+}
+.container:hover{
+    transform: scale(1.2);
+}
+.container:hover .Me img{
+    border: 5px solid red;
+}
+.Pics{
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    animation: MovingInCircle 5s 0s infinite linear;
+}
+.Me img{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 200px;
+    left: 200px;
+    border-radius: 50%;
+    animation: picRotate 5s 0s infinite linear;
+}
+.Pics:hover .pic1,.Pics:hover .pic2,.Pics:hover .pic3,.Pics:hover .pic4,.Pics:hover .pic5{
+    opacity: 0.4;
+}
+.Me:hover{
+    opacity: 1;
+}
+.pic1,.pic2,.pic3,.pic4,.pic5{
+    position: relative;
+}
+.pic1{
+    left: 0;
+    top: 0;
+}
+.pic2{
+    top: 160px;
+    right: 0;
+}
+.pic3{
+    top: 380px;
+    right: 300px;
+}
+.pic4{
+    top: 350px;
+    right: 750px;
+}
+.pic5{
+    top: 120px;
+    right: 1000px;
+}
+.pic1 img,.pic2 img,.pic3 img,.pic4 img,.pic5 img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: picRotate 5s 0s infinite linear;
+}
+@keyframes picRotate {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes MovingInCircle {
+    0%{
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
