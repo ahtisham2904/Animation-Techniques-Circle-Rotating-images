@@ -16,6 +16,7 @@ body{
     background-clip: text;
 }
 .container{
+    border-radius: 50%;
     transition: all 2s ease;
 }
 .container:hover{
@@ -27,9 +28,10 @@ body{
 .Pics{
     width: 600px;
     height: 600px;
+    border-radius: 50%;
     margin: auto;
     display: flex;
-    animation: MovingInCircle 5s 0s infinite linear;
+    animation: MovingInCircle 15s 0s infinite linear;
 }
 .Me img{
     position: relative;
@@ -38,7 +40,7 @@ body{
     top: 200px;
     left: 200px;
     border-radius: 50%;
-    animation: picRotate 5s 0s infinite linear;
+    animation: picRotate 15s 0s infinite linear;
 }
 .Pics:hover .pic1,.Pics:hover .pic2,.Pics:hover .pic3,.Pics:hover .pic4,.Pics:hover .pic5{
     opacity: 0.4;
@@ -73,7 +75,7 @@ body{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    animation: picRotate 5s 0s infinite linear;
+    animation: picRotate 15s 0s infinite linear;
 }
 @keyframes picRotate {
     0%{
